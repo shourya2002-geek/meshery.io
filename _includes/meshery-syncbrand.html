@@ -28,6 +28,18 @@
 
   }
 
+  .btn-down {
+
+    background-color: #EBC017;
+    width: 219.2px;
+    height: 49px;
+    padding: 14px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .PalletBox {
     height: 16rem;
     width: 16rem;
@@ -63,14 +75,14 @@
 
 <div className="post-content">
   <div class="row sub-project brand-section">
-    <h2 className="layerH3">
+    <h2 class="layerH3">
       MeshSync
     </h2>
     <Col xs={12} sm={6} className="download-button">
     <a href="/brand/meshsync-brand-kit.zip">
-      <Button primary title="Download Logo Assets" external={true}>
-        <FiDownloadCloud size={21} className="icon-left" />
-      </Button>
+      <button primary class="btn-down" external={true}>
+        Download Logo Assets <FiDownloadCloud size={21} className="icon-left" />
+      </button>
     </a>
     </Col>
     <Col>
@@ -86,7 +98,7 @@
   </div>
   <Row>
     <Col>
-    <h3 className="layerH3 in">
+    <h3 class="layerH3 in">
       Logos
     </h3>
     </Col>
@@ -103,7 +115,7 @@
   </Row>
   <Row>
     <Col>
-    <h3 className="layerH3 in">
+    <h3 class="layerH3 in">
       Colors
     </h3>
     </Col>

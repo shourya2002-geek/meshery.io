@@ -11,50 +11,51 @@
   .row {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust as needed */
-    flex-wrap: wrap; /* Allows divs to wrap to the next line if they don't fit */
-}
+    justify-content: space-between;
+    /* Adjust as needed */
+    flex-wrap: wrap;
+    /* Allows divs to wrap to the next line if they don't fit */
+  }
 
   .col {
 
     position: relative;
     width: 100%;
 
-
-
-
   }
-
-
 </style>
 
 
 
 <div class="post-content">
-    <div class="row">
-      <h1 class="display: flex">
-        Brand Guide
-      </h1>
-      <div class="download-button">
-        <a href="/brand/brand-guide.pdf">
-          <Button primary title="Download Brand Guide" external={false}>
-            <FiDownloadCloud size={21} class="icon-left" />
-          </Button>
-        </a>
-      </div>
-
-        <p>
-          A Layer5 brand guide is a comprehensive document that outlines the guidelines and standards for presenting and representing the Layer5 brand consistently. It serves as a vital resource for employees, partners, and external agencies to ensure that the Layer5 brand is presented consistently, accurately, and in line with the brand's values and messaging.
-        </p>
-
+  <div class="row">
+    <h1 class="display: flex">
+      Brand Guide
+    </h1>
+    <div class="download-button">
+      <a href="/brand/brand-guide.pdf">
+        <Button primary title="Download Brand Guide" external={false}>
+          <FiDownloadCloud size={21} class="icon-left" />
+        </Button>
+      </a>
     </div>
-    <div class="row">
-      <div xs={12} class="">
-        <div class="row bookmarks">
-          <Link to={BrandGuidePDF}>
-            <img class="bookmarks" src='../assets/images/brand-guide.png' alt="Layer5 Brand Guide" />
-          </Link>
-        </div>
+
+
+    <p>
+      A Layer5 brand guide is a comprehensive document that outlines the guidelines and standards for presenting and
+      representing the Layer5 brand consistently. It serves as a vital resource for employees, partners, and external
+      agencies to ensure that the Layer5 brand is presented consistently, accurately, and in line with the brand's
+      values and messaging.
+    </p>
+
+  </div>
+  <div class="row">
+    <div xs={12} class="">
+      <div class="row bookmarks">
+        <Link to={BrandGuidePDF}>
+        <img class="bookmarks" src='../assets/images/brand-guide.png' alt="Layer5 Brand Guide" />
+        </Link>
       </div>
     </div>
   </div>
+</div>
