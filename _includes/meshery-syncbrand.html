@@ -1,36 +1,22 @@
-<!-- 1. Add latest jQuery and fancybox files -->
-<link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/integrations/main.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/brandpage.css">
 
 <style>
-  .row {
+  .logo-img {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* Adjust as needed */
-    flex-wrap: wrap;
-    /* Allows divs to wrap to the next line if they don't fit */
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
   }
 
-  .col {
-
-    position: relative;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-
-
-
+  .img {
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
   }
 
   .btn-down {
-
-    background-color: #EBC017;
+    background-color: #ebc017;
     width: 219.2px;
     height: 49px;
     padding: 14px;
@@ -43,106 +29,113 @@
   .PalletBox {
     height: 16rem;
     width: 16rem;
-    background-color: #00B39F;
+    background-color: #00b39f;
     margin-bottom: 1rem;
     padding: 1.5rem 2.5rem;
   }
 
   .p1 {
-    background-color: #00D3A9;
-
+    background-color: #00d3a9;
   }
 
   .p2 {
-    background-color: #EBC017;
-
+    background-color: #ebc017;
   }
 
   .p3 {
-    background-color: #FFF3C5;
-
+    background-color: #fff3c5;
   }
 
   .p4 {
-    background-color: #7A848E;
+    background-color: #7a848e;
   }
 
   .p5 {
-    background-color: #1E2117;
+    background-color: #1e2117;
+  }
+
+  .sub-project {
+    margin-top: -2rem;
+  }
+
+  .brand-section {
+    padding-top: 7rem;
   }
 </style>
 
-
-<div className="post-content">
+<div class="post-content">
   <div class="row sub-project brand-section">
-    <h2 class="layerH3">
-      MeshSync
-    </h2>
-    <Col xs={12} sm={6} className="download-button">
-    <a href="/brand/meshsync-brand-kit.zip">
-      <button primary class="btn-down" external={true}>
-        Download Logo Assets <FiDownloadCloud size={21} className="icon-left" />
-      </button>
-    </a>
-    </Col>
-    <Col>
-    <p>
-      The MeshSync mark includes the MeshSync name & logo, and any word,
-      phrase, image, or other designation that identifies the source or
-      origin of any Layer5 projects. Please don’t modify the marks or
-      use them in a confusing way, including suggesting sponsorship or
-      endorsement by Layer5, or in a way that confuses Layer5 with
-      another brand (including your own).
-    </p>
-    </Col>
-  </div>
-  <Row>
-    <Col>
-    <h3 class="layerH3 in">
-      Logos
-    </h3>
-    </Col>
-    <SRLWrapper>
-      <Row Vcenter className="ImgDiv">
-        <Col xs={12} sm={4} className="logo">
-        <img src="../assets/images/meshsync.webp" alt="MeshSync Logo" height="300" width="300" />
-        </Col>
-        <Col xs={12} sm={4} className="logo">
-        <img src="../assets/images/meshsync-light.webp" alt="MeshSyncLight Logo" height="300" width="300" />
-        </Col>
-      </Row>
-    </SRLWrapper>
-  </Row>
-  <Row>
-    <Col>
-    <h3 class="layerH3 in">
-      Colors
-    </h3>
-    </Col>
-    <Col>
-    <p>
-      The MeshSync color palette consists of the primary MeshSync color
-      and additional shades. The MeshSync logo should be white or
-      monochrome tonal when using a color background.
-    </p>
-    </Col>
-    <div class="row">
-
-      <div class="PalletBox p1">
-      </div>
-      <div class="PalletBox p2">
-      </div>
-
-      <div class="PalletBox p3">
-      </div>
-
-      <div class="PalletBox p4">
-      </div>
-
-      <div class="PalletBox p5">
-      </div>
-
-
+    <div class="col xs-12 sm-6">
+      <h2 class="layerH3">MeshSync</h2>
     </div>
-  </Row>
+    <div class="col xs-12 sm-6">
+      <a
+        href="/brand/meshsync-brand-kit.zip"
+        class="btn-down"
+        title="Download Logo Assets"
+      >
+        <button>
+          <i class="FiDownloadCloud" style="font-size: 21px"></i> Download
+        </button>
+      </a>
+    </div>
+    <div class="col">
+      <p>
+        The MeshSync mark includes the MeshSync name & logo, and any word,
+        phrase, image, or other designation that identifies the source or origin
+        of any Layer5 projects. Please don’t modify the marks or use them in a
+        confusing way, including suggesting sponsorship or endorsement by
+        Layer5, or in a way that confuses Layer5 with another brand (including
+        your own).
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3 class="layerH3 in">Logos</h3>
+    </div>
+    <SRLWrapper>
+      <div Vcenter class="row ImgDiv">
+        <div class="col xs-12 sm-4 logo">
+          <img src="{MeshSync}" alt="MeshSync Logo" />
+        </div>
+        <div class="col xs-12 sm-4 logo">
+          <img src="{MeshSyncLight}" alt="MeshSyncLight Logo" />
+        </div>
+      </div>
+    </SRLWrapper>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3 class="layerH3 in">Colors</h3>
+    </div>
+    <div class="col">
+      <p>
+        The MeshSync color palette consists of the primary MeshSync color and
+        additional shades. The MeshSync logo should be white or monochrome tonal
+        when using a color background.
+      </p>
+    </div>
+    <div class="row color-code-wrapper">
+      <ColorBox name="Keppel" R="0" G="179" B="159" colorCode="#00B39F" />
+      <ColorBox
+        name="Caribbean Green"
+        R="0"
+        G="211"
+        B="169"
+        colorCode="#00D3A9"
+      />
+      <ColorBox name="Casper" R="177" G="182" B="184" colorCode="#B1B6B8" />
+      <div class="white-color-box">
+        <ColorBox
+          name="White"
+          R="255"
+          G="255"
+          B="255"
+          dark
+          colorCode="#FFFFFF"
+        />
+      </div>
+    </div>
+  </div>
 </div>

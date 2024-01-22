@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../_sass/mixins/brandpage.scss"
+    ],
+    "names": [],
+    "file": "brandpage.css"
+}

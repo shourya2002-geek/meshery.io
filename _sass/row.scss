@@ -1,0 +1,19 @@
+.row {
+  /* Base flex container styles */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* Additional class for vertical centering */
+  .flex-container.v-center {
+    align-items: center;
+  }
+
+  /* Additional class for horizontal centering */
+  .flex-container.h-center {
+    justify-content: center;
+  }
+}

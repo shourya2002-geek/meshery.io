@@ -1,0 +1,143 @@
+<!-- 1. Add latest jQuery and fancybox files -->
+<link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/integrations/main.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<style>
+    .row {
+        display: flex;
+        justify-content: space-between;
+        /* Adjust as needed */
+        flex-wrap: wrap;
+        /* Allows divs to wrap to the next line if they don't fit */
+    }
+
+    .col {
+
+        position: relative;
+        width: 100%;
+
+
+
+
+    }
+
+    .PalletBox {
+        height: 16rem;
+        width: 16rem;
+        background-color: #00B39F;
+        margin-bottom: 1rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .btn-down {
+
+        background-color: #EBC017;
+        width: 219.2px;
+        height: 49px;
+        padding: 14px;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+    }
+
+    .p1 {
+        background-color: #00D3A9;
+
+    }
+
+    .p2 {
+        background-color: #EBC017;
+
+    }
+
+    .p3 {
+        background-color: #FFF3C5;
+
+    }
+
+    .p4 {
+        background-color: #7A848E;
+    }
+
+    .p5 {
+        background-color: #1E2117;
+    }
+</style>
+
+<div class="post-content">
+    <Row class="brand-section">
+      <Col xs={12} sm={6}>
+        <h1 class="layerH3">
+                      Meshery
+        </h1>
+      </Col>
+      <Col xs={12} sm={6} class="download-button">
+        <a href="/brand/meshery-brand-kit.zip">
+          <Button primary title="Download Logo Assets" external={true}>
+            <FiDownloadCloud size={21} class="icon-left" />
+          </Button>
+        </a>
+      </Col>
+      <Col>
+        <p>
+          The Meshery mark includes the Meshery name & logo, and any word,
+          phrase, image, or other designation that identifies the source or
+          origin of any Layer5 projects. Please don’t modify the marks or
+          use them in a confusing way, including suggesting sponsorship or
+          endorsement by Layer5, or in a way that confuses Layer5 with
+          another brand (including your own).
+        </p>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <h2 class="layerH3 in">
+          Logos
+        </h2>
+      </Col>
+      <SRLWrapper>
+        <Row Vcenter class="ImgDiv">
+          <Col xs={12} sm={4}>
+            <img src={MeshDarkText} alt="MesheryDark Logo"/>
+          </Col>
+          <Col xs={12} sm={4}>
+            <img src={MeshLogoLightTextSide} alt="MesheryLightTextSide Logo"/>
+          </Col>
+        </Row>
+        <Row Vcenter class="ImgDiv">
+          <Col xs={12} sm={4}>
+            <img src={MeshLogoLightText} alt="MesheryLightText Logo"/>
+          </Col>
+          <Col xs={12} sm={4}>
+            <img src={MeshLogoOnly} alt="Meshery Logo" />
+          </Col>
+        </Row>
+      </SRLWrapper>
+    </Row>
+    <Row>
+      <Col>
+        <h2 class="layerH3 in">
+          Colors
+        </h2>
+      </Col>
+      <Col>
+        <p>
+          The Meshery color palette consists of the primary Meshery color
+          and additional shades. The Meshery logo should be white or
+          monochrome tonal when using a color background.
+        </p>
+      </Col>
+      <Row class="color-code-wrapper">
+        <ColorBox name="Charcoal" R="60" G="73" B="79" colorCode="#3C494F" />
+        <ColorBox name="Keppel" R="0" G="179" B="159" colorCode="#00B39F" />
+        <ColorBox name="Caribbean Green" R="0" G="211" B="169" colorCode="#00D3A9" />
+      </Row>
+    </Row>
+  </div>
