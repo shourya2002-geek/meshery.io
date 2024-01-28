@@ -32,6 +32,20 @@
 
   }
 
+  .ImgDiv {
+		width: 100%;
+		margin: auto;
+    display: flex;
+		justify-content: space-around;
+    margin-top: 3rem;
+	}
+
+  .logo {
+    background: rgb(0, 0, 0);
+    padding: 0.95rem;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+  }
+
   .btn-down {
 
 background-color: #EBC017;
@@ -107,14 +121,14 @@ align-items: center;
         </h3>
       </Col>
       <SRLWrapper>
-        <Row Vcenter className="ImgDiv">
-          <Col xs={12} sm={4}>
-            <img src="../assets/images/meshery-operator.webp" alt="MesheryOperatorDark Logo" height="300" width="300"/>
-          </Col>
-          <Col xs={12} sm={4} className="logo">
-            <img src="../assets/images/meshery-operator-white.webp" alt="MesheryOperator Logo" height="300" width="300"/>
-          </Col>
-        </Row>
+        <div class="ImgDiv">
+          <div class="" style="display: flex;">
+            <img src="../assets/images/meshery-operator.webp" alt="MesheryOperatorDark Logo" height="300" width="250"/>
+          </div>
+          <div class="logo" style="display: flex;">
+            <img src="../assets/images/meshery-operator-white.webp" alt="MesheryOperator Logo" height="300" width="250"/>
+          </div>
+        </div>
       </SRLWrapper>
     </Row>
     <Row>
@@ -133,18 +147,18 @@ align-items: center;
       <Row className="color-code-wrapper">
         <div class="row">
 
-          <div class="PalletBox p1">
+          <div class="PalletBox p1" style="width: 11rem; height: 12rem;">
           </div>
-          <div class="PalletBox p2">
-          </div>
-  
-          <div class="PalletBox p3">
+          <div class="PalletBox p2" style="width: 11rem; height: 12rem;">
           </div>
   
-          <div class="PalletBox p4">
+          <div class="PalletBox p3" style="width: 11rem; height: 12rem;">
           </div>
   
-          <div class="PalletBox p5">
+          <div class="PalletBox p4" style="width: 11rem; height: 12rem;">
+          </div>
+  
+          <div class="PalletBox p5" style="width: 11rem; height: 12rem;">
           </div>
   
         </div>

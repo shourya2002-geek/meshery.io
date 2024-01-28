@@ -28,6 +28,13 @@
 
   }
 
+  .ImgDiv {
+		width: 100%;
+		margin: auto;
+    display: flex;
+		justify-content: space-around;
+    margin-top: 3rem;
+	}
   .btn-down {
 
     background-color: #EBC017;
@@ -41,11 +48,12 @@
   }
 
   .PalletBox {
-    height: 16rem;
-    width: 16rem;
+    height: 20rem;
+    width: 20rem;
     background-color: #00B39F;
     margin-bottom: 1rem;
     padding: 1.5rem 2.5rem;
+    color: white;
   }
 
   .p1 {
@@ -103,14 +111,16 @@
     </h3>
     </Col>
     <SRLWrapper>
-      <Row Vcenter className="ImgDiv">
-        <Col xs={12} sm={4} className="logo">
-        <img src="../assets/images/meshsync.webp" alt="MeshSync Logo" height="300" width="300" />
-        </Col>
-        <Col xs={12} sm={4} className="logo">
-        <img src="../assets/images/meshsync-light.webp" alt="MeshSyncLight Logo" height="300" width="300" />
-        </Col>
-      </Row>
+
+      <div class="ImgDiv">
+        <div class="logo" style="display: flex;">
+          <img src="../assets/images/meshsync.webp" alt="MesheryOperatorDark Logo" height="270" width="270"/>
+        </div>
+        <div class="logo" style="display: flex;">
+          <img src="../assets/images/meshsync-light.webp" alt="MesheryOperator Logo" height="270" width="270"/>
+        </div>
+      </div>
+
     </SRLWrapper>
   </Row>
   <Row>
@@ -128,18 +138,21 @@
     </Col>
     <div class="row">
 
-      <div class="PalletBox p1">
+      <div class="PalletBox p1" style="width: 11rem; height: 12rem;">
+        Keppel
+
+        RGB 0,179,159
       </div>
-      <div class="PalletBox p2">
+      <div class="PalletBox p2" style="width: 11rem; height: 12rem;">
       </div>
 
-      <div class="PalletBox p3">
+      <div class="PalletBox p3" style="width: 11rem; height: 12rem;">
       </div>
 
-      <div class="PalletBox p4">
+      <div class="PalletBox p4" style="width: 11rem; height: 12rem;">
       </div>
 
-      <div class="PalletBox p5">
+      <div class="PalletBox p5" style="width: 11rem; height: 12rem;">
       </div>
 
 
