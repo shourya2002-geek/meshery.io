@@ -6,31 +6,42 @@
 />
 <style>
 
-  .nav-fixed {
-		position: sticky;
-		top: 6rem;
-		z-index: 1;
-	}
+.nav-fixed {
+    position: sticky;
+    z-index: 10; /* Ensure it's above other content */
+    margin-left: 5rem; /* Align to the right */
+    border-radius: 5px; /* Rounded corners as per the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 1rem; /* Padding inside the navbar */
+    width: 200px; /* Adjust width as needed */
+  }
+
+  ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
 
   .header_link {
-		display: block;
-		margin: 0;
-		position: relative;
-		width: fit-content;
-		font: 500 1.2rem/2.5rem 'Qanelas Soft', sans-serif;
-		transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-
-		span::before {
-			content: '';
-			position: absolute;
-			width: 100%;
-			height: 1px;
-			bottom: 0;
-			margin-bottom: -1px;
-			opacity: 0;
-		}
-
+    display: block;
+    margin-bottom: 0.5rem; /* Space between links */
+    color: #333; /* Link color, assuming a dark grey */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
   }
+
+  .header_link:hover,
+  .header_link:focus {
+    color: #007bff; /* Color when link is hovered or focused */
+    text-decoration: none; /* Ensure underline doesn't re-appear on hover */
+  }
+
+  @media (max-width: 780px) {
+  .nav-fixed {
+    display: none;
+  }
+}
+
 
 
 </style>
@@ -120,30 +131,34 @@
 
 <section style="display: flex;">
 
-  <div style="display:flex;">
+  <div style="">
+
+    <div id="meshery" class="" ref="{mesheryRef}">
+      {% include brand-guide.html %}
+    </div>
+
     <div id="meshery" class="" ref="{mesheryRef}">
       {% include meshery-brand.html %}
     </div>
 
     <div id="meshsync" class="" ref="{meshsyncRef}">
-      {% include meshery-syncbrand.html %}
+      {% include meshmap.html %}
+    </div>
+
+    <div id="meshsync" class="" ref="{meshsyncRef}">
+      {% include mascot.html %}
     </div>
     
-    <div id="meshery-operator" class="" ref="{mesheryOperatorRef}">
-      {% include meshery-operatorbrand.html %}
-    </div>
 
-    <div id="cloud-native" class="" ref="{mesheryOperatorRef}">
-      {% include cloud-nativepatterns.html %}
-    </div>
   </div>
 
-  <div class="nav-fixed" style="justify-content: left; width: 200%; margin-left: 0.5rem;">
+  <div class="nav-fixed" style="justify-content: left; width: 100%">
+    On this Page
     <ul>
-      <li><a href="#meshery" class="header_link">Meshery</a></li>
-      <li><a href="#meshsync" class="header_link">MeshSync</a></li>
-      <li><a href="#meshery-operator" class="header_link">Meshery Operator</a></li>
-      <li><a href="#cloud-native" class="header_link">Cloud Native Patterns</a></li>
+      <li><a href="#meshery" class="header_link">Brand Guide</a></li>
+      <li><a href="#meshsync" class="header_link">Meshery</a></li>
+      <li><a href="#meshery-operator" class="header_link">MeshMap</a></li>
+      <li><a href="#cloud-native" class="header_link">Our Mascot, Five</a></li>
     </ul>
   </div>
 </section>

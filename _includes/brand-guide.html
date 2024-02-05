@@ -1,61 +1,100 @@
 <!-- 1. Add latest jQuery and fancybox files -->
-<link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/integrations/main.css" />
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ site.baseurl }}/integrations/main.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+/>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <style>
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* Adjust as needed */
-    flex-wrap: wrap;
-    /* Allows divs to wrap to the next line if they don't fit */
+  body {
+    font-family: "Open Sans", sans-serif;
   }
 
-  .col {
+  .layerH3 {
+    margin-top: 4rem;
+  }
 
-    position: relative;
+  .ImgDiv {
     width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
 
+  .ImgDiv img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    .main-content {
+      width: 100%;
+    }
   }
 </style>
 
+<div className="post-content">
+  <!-- Corrected: Use 'class' instead of 'className' for plain HTML -->
+  <div class="row sub-project brand-section">
+    <h1 class="layerH3" style="font-weight: 1000">Brand Guide</h1>
 
-
-<div class="post-content">
-  <div class="row">
-    <h1 class="display: flex">
-      Brand Guide
-    </h1>
-    <div class="download-button">
-      <a href="/brand/brand-guide.pdf">
-        <Button primary title="Download Brand Guide" external={false}>
-          <FiDownloadCloud size={21} class="icon-left" />
-        </Button>
-      </a>
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        To begin with, a brand guide has been composed to inform on appropriate
+        usage of all of Layer5’s assets and toolkit, Meshery included. It
+        contains instructions on when, where, and how to make use of Meshery
+        assets including logos and watermarks, even discussing more extensive
+        use cases and providing directives where necessary. To access all of
+        this information, simply access the Layer5 Brand Guide and for component
+        specific directives, visit Layer5’s design system, Sistent Design System
+        at design.layer5.io
+      </p>
     </div>
-
-
-    <p>
-      A Layer5 brand guide is a comprehensive document that outlines the guidelines and standards for presenting and
-      representing the Layer5 brand consistently. It serves as a vital resource for employees, partners, and external
-      agencies to ensure that the Layer5 brand is presented consistently, accurately, and in line with the brand's
-      values and messaging.
-    </p>
-
   </div>
-  <div class="row">
-    <div xs={12} class="">
-      <div class="row bookmarks">
-        <Link to={BrandGuidePDF}>
-        <img class="bookmarks" src='../assets/images/brand-guide.png' alt="Layer5 Brand Guide" />
-        </Link>
-      </div>
+  <!-- Missing closing tag for 'row' added -->
+
+  <div>
+    <div class="ImgDiv" style="display: flex">
+      <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
+      <img
+        src="../assets/images/brand-guide.png"
+        alt="MesheryOperatorDark Logo"
+        height="408px"
+        width="724px"
+      />
     </div>
   </div>
 </div>

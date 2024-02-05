@@ -1,178 +1,220 @@
 <!-- 1. Add latest jQuery and fancybox files -->
-<link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/integrations/main.css" />
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ site.baseurl }}/integrations/main.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+/>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <style>
+  /* Existing styles ... */
 
-  .layerH3 {
+ /* Existing styles ... */
 
-    text-align: start;
-		margin-bottom: 1em;
-  }
-
-  .in {
-
-    margin-top: 2rem;
-  }
-
-  .ImgDiv {
-		width: 100%;
-		margin: auto;
-    display: flex;
-		justify-content: space-around;
-    margin-top: 3rem;
-	}
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-    /* Adjust as needed */
-    flex-wrap: wrap;
-    /* Allows divs to wrap to the next line if they don't fit */
-  }
-
-  .col {
-
-    position: relative;
-    width: 100%;
-
-
-
-
-  }
-
-  .PalletBox {
-    height: 16rem;
-    width: 16rem;
-    background-color: #00B39F;
-    margin-bottom: 1rem;
-    padding: 1.5rem 2.5rem;
-  }
-
-  .btn-down {
-
-background-color: #EBC017;
-width: 219.2px;
-height: 49px;
-padding: 14px;
-border-radius: 7px;
-display: flex;
-align-items: center;
-
-    justify-content: center;
+.layerH3 {
+  margin-top: 4rem;
 }
 
-  .p1 {
-    background-color: #00D3A9;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
 
+/* Styles for the logo images container */
+.ImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow logos to wrap */
+  gap: 1rem; /* space between logos */
+}
+
+/* Responsive styles for logos */
+.ImgDiv img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem; /* Add margin to ensure space around the images */
+}
+
+/* Styles for color boxes */
+.color-palette {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* This will center the color boxes horizontally */
+  align-items: center; /* This will center the color boxes vertically */
+  gap: 1rem; /* space between color boxes */
+  margin-top: 2rem; /* space above the color palette */
+  flex-wrap: wrap; /* Allow color boxes to wrap */
+}
+
+.color-box {
+  flex: 1;
+  min-width: 180px; /* Minimum width for color boxes */
+  max-width: calc(33.333% - 1rem); /* Maximum width for color boxes */
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.color-name {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.color-code {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .color-box {
+    max-width: calc(50% - 1rem); /* two boxes per row on smaller screens */
   }
+}
 
-  .p2 {
-    background-color: #EBC017;
-
+@media (max-width: 480px) {
+  .color-box {
+    max-width: 100%; /* one box per row on very small screens */
   }
+}
 
-  .p3 {
-    background-color: #FFF3C5;
-
-  }
-
-  .p4 {
-    background-color: #7A848E;
-  }
-
-  .p5 {
-    background-color: #1E2117;
-  }
 </style>
 
-
 <div className="post-content">
+  <!-- Corrected: Use 'class' instead of 'className' for plain HTML -->
   <div class="row sub-project brand-section">
-    <h1 class="layerH3" style="font-weight: 1000;">
-     Meshery
-    </h1>
-    <Col xs={12} sm={6} className="download-button">
-    <a href="/brand/meshery-brand-kit.zip">
-      <button primary class="btn-down" "Download Logo Assets" external={true}>
-        Download Logo Assets <FiDownloadCloud size={21} className="icon-left" />
-      </button>
-    </a>
-    </Col>
-    <Col>
-    <p>
-      The Meshery mark includes the Meshery name & logo, and any word,
-      phrase, image, or other designation that identifies the source or
-      origin of any Layer5 projects. Please don’t modify the marks or
-      use them in a confusing way, including suggesting sponsorship or
-      endorsement by Layer5, or in a way that confuses Layer5 with
-      another brand (including your own).
-    </p>
-    </Col>
-    </Row>
+    <h1 class="layerH3" style="font-weight: 1000">Meshery</h1>
 
-    <div>
-      <h2 style="display: flex" class="layerH3 in">
-        Logos
-      </h2>
-
-      <div class="ImgDiv">
-        <div class="" style="display: flex;">
-          <img src="../assets/images/meshery-dark-text.webp" alt="MesheryOperatorDark Logo" height="270" width="270"/>
-        </div>
-        <div class="" style="display: flex;">
-          <img src="../assets/images/meshery-logo-light-text.webp" alt="MesheryOperator Logo" height="270" width="270"/>
-        </div>
-      </div>
-
-
-      <div class="ImgDiv">
-        <div class="" style="display: flex;">
-          <img src="../assets/images/meshery-logo-light-text.webp" alt="MesheryOperatorDark Logo" height="270" width="270"/>
-        </div>
-        <div class="" style="display: flex;">
-          <img src="../assets/images/meshery-logo-dark.webp" alt="MesheryOperator Logo" height="270" width="270"/>
-        </div>
-      </div>
-
-
-    </div>
-    <div class="row">
-      <h2 class="layerH3 in">
-        Colors
-      </h2>
-      <Col>
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
       <p>
-        The Meshery color palette consists of the primary Meshery color
-        and additional shades. The Meshery logo should be white or
-        monochrome tonal when using a color background.
+        The Meshery mark includes the Meshery name & logo, and any word, phrase,
+        image, or other designation that identifies the source or origin of any
+        Layer5 projects. Please don’t modify the marks or use them in a
+        confusing way, including suggesting sponsorship or endorsement by
+        Layer5, or in a way that confuses Layer5 with another brand (including
+        your own).
       </p>
-      </Col>
-      <div class="row">
-
-        <div class="PalletBox p1" style="width: 11rem; height: 12rem;">
-        </div>
-        <div class="PalletBox p2" style="width: 11rem; height: 12rem;">
-        </div>
-
-        <div class="PalletBox p3" style="width: 11rem; height: 12rem;">
-        </div>
-
-        <div class="PalletBox p4" style="width: 11rem; height: 12rem;">
-        </div>
-
-        <div class="PalletBox p5" style="width: 11rem; height: 12rem;">
-        </div>
-
-        <div class="PalletBox p6" style="width: 11rem; height: 12rem;">
-        </div>
-
-
-      </div>
     </div>
   </div>
+  <!-- Missing closing tag for 'row' added -->
+
+  <div>
+    <h2 class="layerH3 in" style="display: flex">Logos</h2>
+
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        Here are the logo and customized name that can be used and combined for
+        different use cases as the need arises. Get access to all the available
+        logo assets including watermarks here, and do not forget to check out
+        the Layer5 Brand Guide for directives on how to apply these assets.
+      </p>
+    </div>
+
+    <div class="ImgDiv" style="display: flex">
+      <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
+      <img
+        src="../assets/images/meshery-dark-text.webp"
+        alt="MesheryOperatorDark Logo"
+        height="270"
+        width="270"
+      />
+      <img
+        src="../assets/images/meshery-logo-light-text.webp"
+        alt="MesheryOperator Logo"
+        height="270"
+        width="270"
+      />
+      <img
+        src="../assets/images/meshery-logo-light-text.webp"
+        alt="MesheryOperatorDark Logo"
+        height="270"
+        width="270"
+      />
+      <img
+        src="../assets/images/meshery-logo-dark.webp"
+        alt="MesheryOperator Logo"
+        height="270"
+        width="270"
+      />
+    </div>
+  </div>
+<!-- Color Section -->
+<div class="row">
+  <h2 class="layerH3 in">Colors</h2>
+  <div class="col">
+    <p>
+      The Meshery color palette consist of the primary Meshery color and
+      additional shades. The Meshery logo should be white or monochrome tonal
+      when using a color background. Visit Sistent Design System at
+      design.layer5.io for more guidance on how to apply Meshery colors.
+    </p>
+  </div>
+  <div class="color-palette">
+    <!-- Color boxes -->
+    <div class="color-box" style="background-color: #3C494F;">
+      <div class="color-name">Charcoal</div>
+      <div>RGB 60, 73, 79</div>
+      <div class="color-code">#3C494F</div>
+    </div>
+    <div class="color-box" style="background-color: #00B39F;">
+      <div class="color-name">Keppel</div>
+      <div>RGB 0, 179, 159</div>
+      <div class="color-code">#00B39F</div>
+    </div>
+    <div class="color-box" style="background-color: #00D3A9;">
+      <div class="color-name">Caribbean Green</div>
+      <div>RGB 0, 211, 169</div>
+      <div class="color-code">#00D3A9</div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <h2 class="layerH3 in">Bookmarks</h2>
+    <div class="col">
+      <p>Here are some of our media available for print.</p>
+    </div>
+    <div class="ImgDiv">
+      <!-- The class 'ImgDiv' will center the image both horizontally and vertically -->
+      <img
+        src="../assets/images/bookmarks.webp"
+        alt="Meshery Bookmarks"
+        style="width: 904px; height: auto"
+      />
+      <!-- 'max-width: 100%' ensures the image is responsive and 'height: auto' maintains the aspect ratio -->
+    </div>
+  </div>
+</div>

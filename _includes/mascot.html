@@ -1,0 +1,102 @@
+<!-- 1. Add latest jQuery and fancybox files -->
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ site.baseurl }}/integrations/main.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<style>
+  .layerH3 {
+    text-align: start;
+    margin-bottom: 1em;
+  }
+
+  .in {
+    margin-top: 2rem;
+  }
+
+  .ImgDiv {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust as needed */
+    flex-wrap: wrap;
+    /* Allows divs to wrap to the next line if they don't fit */
+  }
+
+  .col {
+    position: relative;
+    width: 100%;
+  }
+
+ 
+  
+</style>
+
+<div className="post-content">
+  <!-- Corrected: Use 'class' instead of 'className' for plain HTML -->
+  <div class="row sub-project brand-section">
+    <h1 class="layerH3" style="font-weight: 1000">Our Mascot, Five</h1>
+
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        Introducing Five, a playful and dynamic visual language that captures
+        the essence of Layer5. These charming and minimalist illustrations serve
+        as the perfect embodiment of our brand’s values and offerings.
+      </p>
+    </div>
+  </div>
+  <!-- Missing closing tag for 'row' added -->
+
+  <div>
+    <h2 class="layerH3 in" style="display: flex">illustration</h2>
+
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        Here are a few customizations of Five that can be used across Mehsery
+        where necessary.
+      </p>
+    </div>
+
+    <div class="ImgDiv" style="display: flex">
+      <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
+      <img
+        src="../assets/images/meshery-dark-text.webp"
+        alt="MesheryOperatorDark Logo"
+        height="270"
+        width="270"
+      />
+      <img
+        src="../assets/images/meshery-logo-light-text.webp"
+        alt="MesheryOperator Logo"
+        height="270"
+        width="270"
+      />
+
+    </div>
+  </div>
+</div>

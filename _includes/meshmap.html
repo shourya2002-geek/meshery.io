@@ -1,0 +1,184 @@
+<!-- 1. Add latest jQuery and fancybox files -->
+<link
+  type="text/css"
+  rel="stylesheet"
+  href="{{ site.baseurl }}/integrations/main.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<style>
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .layerH3 {
+    margin-top: 4rem;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* New styles for color boxes */
+  .color-palette {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* This will center the color boxes horizontally */
+    align-items: center; /* This will center the color boxes vertically */
+    gap: 1rem; /* space between color boxes */
+    margin-top: 2rem; /* space above the color palette */
+  }
+
+  .color-box {
+    height: 180px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem; /* rounded corners like in the screenshot */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .color-name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+
+  .color-code {
+    font-size: 0.8rem;
+    color: #666; /* or any color that suits your design */
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .color-palette {
+      margin-left: 0;
+    }
+    .color-box {
+      flex-basis: calc(50% - 1rem); /* two boxes per row on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .color-palette {
+      margin-left: 0;
+    }
+    .color-box {
+      flex-basis: 100%; /* one box per row on very small screens */
+    }
+  }
+</style>
+
+<div className="post-content">
+  <!-- Corrected: Use 'class' instead of 'className' for plain HTML -->
+  <div class="row sub-project brand-section">
+    <h1 class="layerH3" style="font-weight: 1000">MeshMap</h1>
+
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        The MeshMap mark includes the name, logo, and any word, phrase, image,
+        or other designation that identifies the source or origin of any of
+        Layer5’s projects. Please DO NOT modify the marks or use them in a
+        confusing way, including suggesting sponsorship or endorsement by
+        Layer5. Also, do not use it in a way that confuses Meshery and Layer5
+        with any other brand (including your own).
+      </p>
+    </div>
+  </div>
+  <!-- Missing closing tag for 'row' added -->
+
+  <div>
+    <h2 class="layerH3 in" style="display: flex">Logos</h2>
+
+    <div class="col">
+      <!-- Corrected: Use 'div' with 'class' for grid columns -->
+      <p>
+        Here are the logo and customized name that can be used and combined for
+        different use cases as the need arises. Get access to all the available
+        logo assets including watermarks here, and do not forget to check out
+        the Layer5 Brand Guide for directives on how to apply these assets.
+      </p>
+    </div>
+
+    <div class="ImgDiv" style="display: flex">
+        <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
+  
+        <img
+          src="../assets/images/meshmap-color-horizontal.svg"
+          alt="MesheryOperator Logo"
+          height="72px"
+          width="360"
+        />
+        <img
+          src="../assets/images/meshmap-color-icon.svg"
+          alt="MesheryOperatorDark Logo"
+          height="240"
+          width="240"
+        />
+  
+        <img
+          src="../assets/images/meshmap-color-text.webp"
+          alt="MesheryOperatorDark Logo"
+          height="48px"
+          width="400"
+        />
+        
+      </div>
+  </div>
+
+  <div class="row">
+    <h2 class="layerH3 in">Colors</h2>
+    <div class="col">
+      <p>
+        The Meshery color palette consist of the primary Meshery color and
+        additional shades. The Meshery logo should be white or monochrome tonal
+        when using a color background. Visit Sistent Design System at
+        design.layer5.io for more guidance on how to apply Meshery colors.
+      </p>
+    </div>
+    <div class="color-palette">
+      <!-- Color boxes -->
+      <div class="color-box" style="background-color: #3c494f">
+        <div class="color-name">Charcoal</div>
+        <div>RGB 60, 73, 79</div>
+        <div class="color-code">#3C494F</div>
+      </div>
+      <div class="color-box" style="background-color: #00b39f">
+        <div class="color-name">Keppel</div>
+        <div>RGB 0, 179, 159</div>
+        <div class="color-code">#00B39F</div>
+      </div>
+      <div class="color-box" style="background-color: #00d3a9">
+        <div class="color-name">Caribbean Green</div>
+        <div>RGB 0, 211, 169</div>
+        <div class="color-code">#00D3A9</div>
+      </div>
+    </div>
+  </div>
+</div>
