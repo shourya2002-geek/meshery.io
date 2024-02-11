@@ -17,10 +17,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
 />
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-/>
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
@@ -38,7 +35,6 @@
 
 .row {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Allow items to wrap */
 }
@@ -50,13 +46,7 @@
   align-items: center;
   flex-wrap: wrap; /* Allow logos to wrap */
   gap: 1rem; /* space between logos */
-}
-
-/* Responsive styles for logos */
-.ImgDiv img {
-  max-width: 100%;
-  height: auto;
-  margin: 1rem; /* Add margin to ensure space around the images */
+  margin-top: 0;
 }
 
 /* Styles for color boxes */
@@ -72,7 +62,8 @@
 
 .color-box {
   flex: 1;
-  min-width: 180px; /* Minimum width for color boxes */
+  width: 604px;
+  min-width: 100px; /* Minimum width for color boxes */
   max-width: calc(33.333% - 1rem); /* Maximum width for color boxes */
   height: 180px;
   display: flex;
@@ -84,6 +75,7 @@
   padding: 1rem;
   box-sizing: border-box;
 }
+
 
 .color-name {
   margin-top: 0.5rem;
@@ -145,29 +137,19 @@
     <div class="ImgDiv" style="display: flex">
       <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
       <img
-        src="../assets/images/meshery-dark-text.webp"
+        src="../assets/images/left-logo.png"
         alt="MesheryOperatorDark Logo"
         height="270"
         width="270"
+        style="background-color: black;"
       />
       <img
-        src="../assets/images/meshery-logo-light-text.webp"
+        src="../assets/images/right-logo.png"
         alt="MesheryOperator Logo"
         height="270"
         width="270"
       />
-      <img
-        src="../assets/images/meshery-logo-light-text.webp"
-        alt="MesheryOperatorDark Logo"
-        height="270"
-        width="270"
-      />
-      <img
-        src="../assets/images/meshery-logo-dark.webp"
-        alt="MesheryOperator Logo"
-        height="270"
-        width="270"
-      />
+      
     </div>
   </div>
 <!-- Color Section -->
@@ -216,5 +198,6 @@
       />
       <!-- 'max-width: 100%' ensures the image is responsive and 'height: auto' maintains the aspect ratio -->
     </div>
+    
   </div>
 </div>

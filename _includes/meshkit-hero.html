@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meshery's Kit</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+}
+
+.hero-left, .hero-right {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 140%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-left {
+  left: 0;
+  background-image: url(''); /* Replace with your actual image path */
+  margin-left: -16%;
+}
+
+.hero-right {
+  right: 0;
+  background-image: url(''); /* Replace with your actual image path */
+  margin-right: -16%;
+}
+
+.brand-kit {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  padding: 50px 20px;
+  z-index: 2; /* Make sure this layer is above the background images */
+}
+
+.brand-kit h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.brand-kit p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFA500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-left, .hero-right {
+    display: none; /* Hide background images on smaller screens */
+  }
+  
+  .brand-kit h1 {
+    font-size: 2em;
+  }
+
+  .brand-kit p {
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-kit h1 {
+    font-size: 1.5em;
+  }
+
+  .brand-kit p {
+    font-size: 0.8em;
+  }
+
+  button {
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="container1">
+    <div class="hero-left"></div>
+    <div class="brand-kit">
+        <div>
+            <h1>Meshery's Kit</h1>
+      <p>Some guidelines for Meshery have been compiled into a brand kit that can help you better understand and create with the Meshery brand and its assets. For unique use cases on how to utilize our marks in a way not covered here, please contact us and include a visual mockup of intended use.</p>
+      <button>Download Meshery Kit</button>
+        </div>
+      
+    </div>
+    <div class="hero-right"></div>
+  </div>
+</body>
+</html>

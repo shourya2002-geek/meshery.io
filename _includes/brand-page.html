@@ -5,15 +5,14 @@
   href="{{ site.baseurl }}/integrations/main.css"
 />
 <style>
-
-.nav-fixed {
+  .nav-fixed {
     position: sticky;
     z-index: 10; /* Ensure it's above other content */
     margin-left: 5rem; /* Align to the right */
     border-radius: 5px; /* Rounded corners as per the image */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 1rem; /* Padding inside the navbar */
-    width: 200px; /* Adjust width as needed */
+    margin-top: 8rem;
   }
 
   ul {
@@ -24,10 +23,12 @@
 
   .header_link {
     display: block;
-    margin-bottom: 0.5rem; /* Space between links */
-    color: #333; /* Link color, assuming a dark grey */
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem; /* Space between links */
+    color: white; /* Link color, assuming a dark grey */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1.1rem;
   }
 
   .header_link:hover,
@@ -37,13 +38,10 @@
   }
 
   @media (max-width: 780px) {
-  .nav-fixed {
-    display: none;
+    .nav-fixed {
+      display: none;
+    }
   }
-}
-
-
-
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -129,11 +127,13 @@
   }
 </style>
 
-<section style="display: flex;">
+<div id="meshkit-hero" class="" ref="{mesheryRef}">
+  {% include meshkit-hero.html %}
+</div>
 
-  <div style="">
-
-    <div id="meshery" class="" ref="{mesheryRef}">
+<section style="display: flex; width: 100%; justify-content: center; ">
+  <div>
+    <div id="brand-guide" class="" ref="{mesheryRef}">
       {% include brand-guide.html %}
     </div>
 
@@ -141,24 +141,31 @@
       {% include meshery-brand.html %}
     </div>
 
-    <div id="meshsync" class="" ref="{meshsyncRef}">
+    <div id="meshmap" class="" ref="{meshsyncRef}">
       {% include meshmap.html %}
     </div>
 
-    <div id="meshsync" class="" ref="{meshsyncRef}">
+    <div id="mascot" class="" ref="{meshsyncRef}">
       {% include mascot.html %}
     </div>
-    
-
   </div>
 
-  <div class="nav-fixed" style="justify-content: left; width: 100%">
+  <div
+    class="nav-fixed"
+    style="
+      width: 100%;
+      background-color: #15272f80;
+      color: white;
+      font-size: 15px;
+      height: 13rem;
+    "
+  >
     On this Page
     <ul>
-      <li><a href="#meshery" class="header_link">Brand Guide</a></li>
-      <li><a href="#meshsync" class="header_link">Meshery</a></li>
-      <li><a href="#meshery-operator" class="header_link">MeshMap</a></li>
-      <li><a href="#cloud-native" class="header_link">Our Mascot, Five</a></li>
+      <li><a href="#brand-guide" class="header_link">Brand Guide</a></li>
+      <li><a href="#meshery" class="header_link">Meshery</a></li>
+      <li><a href="#meshmap" class="header_link">MeshMap</a></li>
+      <li><a href="#mascot" class="header_link">Our Mascot, Five</a></li>
     </ul>
   </div>
 </section>

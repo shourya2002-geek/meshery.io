@@ -17,10 +17,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
 />
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-/>
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
@@ -31,6 +28,15 @@
   body {
     font-family: "Open Sans", sans-serif;
   }
+
+  .ImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow logos to wrap */
+  gap: 1rem; /* space between logos */
+  margin-top: 0;
+}
 
   .layerH3 {
     margin-top: 4rem;
@@ -126,27 +132,27 @@
       </p>
     </div>
 
-    <div class="ImgDiv" style="display: flex">
+    <div class="ImgDiv" style="">
         <!-- Corrected: Combined into a single 'div' with 'display: flex' -->
   
         <img
-          src="../assets/images/meshmap-color-horizontal.svg"
+          src="../assets/images/meshmap-horizontal.png"
           alt="MesheryOperator Logo"
-          height="72px"
-          width="360"
+          height="100px"
+          width="250px"
         />
         <img
-          src="../assets/images/meshmap-color-icon.svg"
+          src="../assets/images/meshmap-long.png"
           alt="MesheryOperatorDark Logo"
-          height="240"
-          width="240"
+          height="140px"
+          width="200px"
         />
   
         <img
-          src="../assets/images/meshmap-color-text.webp"
+          src="../assets/images/meshmap-white.png"
           alt="MesheryOperatorDark Logo"
           height="48px"
-          width="400"
+          width="300px"
         />
         
       </div>
@@ -180,5 +186,7 @@
         <div class="color-code">#00D3A9</div>
       </div>
     </div>
+    <button class="button1"><i class="fa fa-cloud-download" style="font-size:24px"></i>Download Meshery Kit</button>
+    
   </div>
 </div>
