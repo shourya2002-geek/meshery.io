@@ -22,9 +22,7 @@
   position: absolute;
   top: 0;
   width: 40%;
-  height: 140%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 300px;
 }
 
 .hero-left {
@@ -36,7 +34,7 @@
 .hero-right {
   right: 0;
   background-image: url(''); /* Replace with your actual image path */
-  margin-right: -16%;
+  margin-right: -21%;
 }
 
 .brand-kit {
@@ -117,16 +115,21 @@ button:hover {
 </head>
 <body>
   <div class="container1">
-    <div class="hero-left"></div>
+    <div class="hero-left">
+      <img src="../assets/images/hero-left.png" height="500px"/>
+    </div>
     <div class="brand-kit">
         <div>
             <h1>Meshery's Kit</h1>
       <p>Some guidelines for Meshery have been compiled into a brand kit that can help you better understand and create with the Meshery brand and its assets. For unique use cases on how to utilize our marks in a way not covered here, please contact us and include a visual mockup of intended use.</p>
-      <button>Download Meshery Kit</button>
+      <button class="button1"><i class="fa fa-cloud-download" style="font-size:24px"></i>Download Meshery Kit</button>
+    
         </div>
       
     </div>
-    <div class="hero-right"></div>
+    <div class="hero-right">
+      <img src="../assets/images/hero-right.png" height="500px"/>
+    </div>
   </div>
 </body>
 </html>
